@@ -1,33 +1,53 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# ┌─────────────────────────────────────────────────────────────────────────
+# │ 1) Build output
+# └─────────────────────────────────────────────────────────────────────────
+/target/
+/build/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Maven wrapper binary
+/.mvn/wrapper/maven-wrapper.jar
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# ┌─────────────────────────────────────────────────────────────────────────
+# │ 2) Application secrets & tokens
+# └─────────────────────────────────────────────────────────────────────────
+# your real Spring config with creds
+/src/main/resources/application.yml
 
-### NetBeans ###
+# Google OAuth client JSON
+/src/main/resources/credentials/
+
+# token store produced by GmailAuthentication
+/tokens/
+
+# ┌─────────────────────────────────────────────────────────────────────────
+# │ 3) IDE / editor
+# └─────────────────────────────────────────────────────────────────────────
+# IntelliJ
+/.idea/
+/*.iml
+/*.ipr
+/*.iws
+
+# VS Code
+/.vscode/
+
+# Eclipse / STS
+/.classpath
+/.project
+/.settings/
+/.apt_generated
+/.factorypath
+/.springBeans
+/.sts4-cache
+
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+# ┌─────────────────────────────────────────────────────────────────────────
+# │ 4) OS clutter
+# └─────────────────────────────────────────────────────────────────────────
+.DS_Store

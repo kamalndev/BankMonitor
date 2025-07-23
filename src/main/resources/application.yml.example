@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: monitorproject
+
+app:
+  nusenda:
+    public-root: "https://www.nusenda.org/"
+    bank-root: "https://internet-banking.nusenda.org"
+    user-id: "nusenda_username_example"
+    password: "nusenda_password_example"
+    mfa-poll-interval-ms: 5000
+    mfa-timeout-ms: 90000
+
+
